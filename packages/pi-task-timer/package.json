@@ -1,0 +1,41 @@
+{
+  "name": "@jy02414216/pi-task-timer",
+  "version": "1.0.0",
+  "description": "A Pi extension that displays the elapsed time of each agent task.",
+  "type": "module",
+  "license": "MIT",
+  "author": "jy02414216",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "task-timer"
+  ],
+  "files": [
+    "src/index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jy02414216/pi-extensions.git",
+    "directory": "packages/pi-task-timer"
+  },
+  "homepage": "https://github.com/jy02414216/pi-extensions/tree/main/packages/pi-task-timer#readme",
+  "bugs": {
+    "url": "https://github.com/jy02414216/pi-extensions/issues"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
